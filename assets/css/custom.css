@@ -1170,13 +1170,13 @@
   .couple-half .desc-groom {
     padding-right: 180px;
     text-align: right;
-    color: #f26147;
+    color: #F14E95;
   }
 
   .couple-half .desc-bride {
     padding-left: 180px;
     text-align: left;
-    color: #f26147;
+    color: #F14E95;
   }
   @media screen and (max-width: 480px) {
     .couple-half .groom, .couple-half .bride {
@@ -1187,12 +1187,12 @@
     .couple-half .desc-groom {
       padding-right: 0;
       text-align: center;  
-      color: #f26147;   
+      color: #F14E95;   
     }
     .couple-half .desc-bride {
       padding-left: 0;
       text-align: center;
-      color: #f26147;
+      color: #F14E95;
       
     }
   }
