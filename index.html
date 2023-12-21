@@ -47,6 +47,13 @@
 
 <body>
 
+  <!-- play music -->
+  <video id="video1" width="420" controls loop>
+    <source src="music/wings4.mp4" type="video/mp4" />
+    Your browser does not support HTML video.
+  </video>
+ 
+
   <!-- ======= Mobile nav toggle button ======= -->
   <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
   <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
@@ -60,6 +67,7 @@
         <li><a href="#resume" class="nav-link scrollto"><i class="fa fa-calendar-days"></i> <span>Akad Nikah & Resepsi</span></a></li>
         <li><a href="#portfolio" class="nav-link scrollto"><i class="fa fa-image"></i> <span>Gallery</span></a></li>
         <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Kirim Ucapan</span></a></li>
+        <li><a href="#" onclick="playPause(this)" class="nav-link scrollto" id="volume"><i class="fa fa-play"></i> <span>Play Music</span> </a> </li>
       </ul>
     </nav><!-- .nav-menu -->
 
@@ -313,6 +321,18 @@
     } else {
       $('.simply-countdown-wedding').html('ACARA SEDANG BERLANGSUNG SAAT INI');
     }
+     
+      const myVideo = document.getElementById("video1");        
+
+      function playPause(x) {
+        if (myVideo.paused) {
+          myVideo.play();
+          document.getElementById("volume").className = "bi bi-volume-down-fill";
+        } else {
+          myVideo.pause();
+          document.getElementById("volume").className = "bi bi-volume-mute-fill";
+        }
+      }
 
   </script>
 

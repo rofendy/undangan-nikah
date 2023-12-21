@@ -1295,3 +1295,13 @@ svg {
   font-weight: 700;
   color : #F14E95 !important;
 }
+
+#volume {
+     cursor: pointer;
+  /* width: 100%; Full width */
+}
+
+/* Video music player */
+#video1 {
+  display: none;
+}
